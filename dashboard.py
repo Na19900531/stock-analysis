@@ -6,10 +6,10 @@ import urllib.parse
 import streamlit as st
 
 DB_USER = "postgres"
-DB_PASSWORD = urllib.parse.quote_plus("Mahivalli@24")
+DB_PASSWORD = urllib.parse.quote_plus("123456789")
 DB_HOST = "localhost"
 DB_PORT = "5432"
-DB_NAME = "stockhost"
+DB_NAME = "stock_analysis_db"
 engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
 
 df = pd.read_csv("master_csv_with_sector.csv")
