@@ -5,10 +5,10 @@ import psycopg2
 from sqlalchemy import create_engine
 
 DB_USER = "postgres"
-DB_PASSWORD = "Mahivalli@24"
+DB_PASSWORD = "123456789"
 DB_HOST = "localhost"
 DB_PORT = "5432"
-DB_NAME = "stockhost"
+DB_NAME = "stock_analysis_db"
 
 engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
 root_path = "data"   
